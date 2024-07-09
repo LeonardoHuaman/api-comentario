@@ -1,13 +1,12 @@
-org: geraldocolchado
+org: leonardohc
 service: api-comentario
 
 provider:
   name: aws
   runtime: python3.12	
-  # Default memory size for functions (default: 1024MB)
   memorySize: 1024
   iam:
-    role: arn:aws:iam::447891120606:role/LabRole	
+    role: arn:aws:iam::568587190313:role/LabRole
   environment:
     TABLE_NAME: ${sls:stage}-t_comentarios
 
